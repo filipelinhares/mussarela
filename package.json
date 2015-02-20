@@ -1,0 +1,20 @@
+{
+  "name": "Mussarela",
+  "version": "0.1.0",
+  "description": "A set of useful SASS mixins",
+  "main": "index.js",
+  "keywords": [
+    "sass",
+    "mixins",
+    "css",
+    "scss"
+  ],
+  "author": "Filipe Linhares",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "gulp-scss-lint": "^0.1.7",
+    "sassdoc": "^2.1.2"
+  }
+}

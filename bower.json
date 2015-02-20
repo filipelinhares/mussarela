@@ -1,0 +1,22 @@
+{
+  "name": "Mussarela",
+  "version": "0.1.0",
+  "homepage": "https://github.com/filipelinhares/mussarela",
+  "authors": [
+    "Filipe Linhares <lip.linhares@gmail.com>"
+  ],
+  "description": "A set of useful SASS mixins",
+  "keywords": [
+    "mixins",
+    "sass",
+    "scss",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "specs"
+  ]
+}
