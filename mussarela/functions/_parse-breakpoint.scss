@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+@function parse-breakpoint ($expr) {
+  $min: 'min-width';
+  $element: '';
+  $operator: '';
+  $value: '';
+  $size: '';
+  $interval: '';
+
+  @if str-slice($expr, 2, 2) == '=' {
+    $operator: str-slice($expr, 1, 2);
+    $value: str-slice($expr, 3);
+  } @else {
+    $operator: str-slice($expr, 1, 1);
+    $value: str-slice($expr, 2);
+  }
+
+  @if map-has-key($breakpoints, $value) {
+    $size: map-get($breakpoints, $value);
+  } @else if is-length($value) {
+    $size: to-number($value);
+  } @else {
+    @error "Uknow value #{$value}";
+  }
+
+
+  $unit: unit($size);
+  $interval: 0;
+
+  @if contains($unit-intervals, $unit) {
+    $interval: map-get($unit-intervals, $unit);
+  } @else {
+    @warn "Uknow unit #{$unit}!"
+  }
+
+  @if $operator == '>' {
+    $element: "(min-width: #{$size + $interval})";
+  } @else if $operator == '<' {
+    $element: "(max-width: #{$size - $interval})";
+  } @else if $operator == '>=' {
+    $element: "(min-width: #{$size})";
+  } @else if $operator == '<=' {
+    $element: "(max-width: #{$size})";
+  }
+  @return $element;
+}

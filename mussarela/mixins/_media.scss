@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+@mixin media ($conditions...) {
+  @for $i from 1 through length($conditions) {
+    $conditions: set-nth($conditions, $i, parse-breakpoint(nth($conditions, $i)));
+  }
+
+  $branches: get-query-branches($conditions);
+  $query: '';
+
+  @each $branch in $branches {
+    @if (str-length($query) != 0) {
+      $query: $query + ', ';
+    }
+
+    $query: $query + $branch;
+  }
+
+  @media #{$query} {
+    @content;
+  }
+}
