@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+@function not-contains($list) {
+  @each $item in $list {
+    @if not $item {
+      @return true;
+    }
+  }
+
+  @return false;
+}
