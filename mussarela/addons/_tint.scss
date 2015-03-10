@@ -1,0 +1,5 @@
+@charset 'UTF-8';
+
+@function tint ($color, $perc) {
+  @return mix(#fff, $color, $perc);
+}

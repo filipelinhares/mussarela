@@ -1,0 +1,6 @@
+@charset 'UTF-8';
+
+@function shade ($color, $perc) {
+  @return mix(#000, $color, $perc);
+}
+
