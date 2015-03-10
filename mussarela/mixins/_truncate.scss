@@ -1,0 +1,8 @@
+@charset 'UTF-8';
+
+@mixin truncate ($width: 100%) {
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

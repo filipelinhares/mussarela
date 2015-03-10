@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+@mixin border-top-radius ($radi) {
+  border-top-left-radius: $radi;
+  border-top-right-radius: $radi;
+}
+
+@mixin border-bottom-radius ($radi) {
+  border-bottom-left-radius: $radi;
+  border-bottom-right-radius: $radi;
+}
+
+@mixin border-left-radius ($radi) {
+  border-bottom-left-radius: $radi;
+  border-top-left-radius: $radi;
+}
+
+@mixin border-right-radius ($radi) {
+  border-bottom-right-radius: $radi;
+  border-top-right-radius: $radi;
+}
