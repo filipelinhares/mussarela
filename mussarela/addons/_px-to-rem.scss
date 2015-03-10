@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+@function rem($values, $base-font: 16) {
+  $rem: ();
+
+  @each $value in $values {
+
+    @if $value == 0 or $value == auto {
+      $rem: append($rem, $value);
+    } @else {
+      $unit: unit($value);
+      $val: $value;
+
+      @if not unitless($value) {
+        $val: strip-units($value);
+      }
+
+      $rem: append($rem, (#{$val / 10}rem));
+    }
+  }
+  @return $rem;
+}
