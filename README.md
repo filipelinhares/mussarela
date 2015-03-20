@@ -15,8 +15,9 @@ I was using bourbon and others for a time, but he has more than i need and didn'
 2. Extract the mussarela folder
 3. Import it in your project `@import mussarela/mussarela`.
 
-##### Bower - TODO
-##### Sashe - TODO
+##### Bower
+1. `bower install mussarela`
+2. Import the mussarela file into your project
 
 ## Todo
 
