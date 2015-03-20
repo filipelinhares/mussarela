@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
 @mixin v-center {
-  @include position(relative, top 50%);
+  @include position(relative, 50% nil nil nil);
   transform: translateY(-50%);
 }
