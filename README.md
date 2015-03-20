@@ -2,7 +2,7 @@
 
 > An useful and simple set of SASS mixins.
 
-**Documentation** - TODO
+[**Documentation**](https://github.com/filipelinhares/mussarela/wiki)
 
 ## Why another?
 
