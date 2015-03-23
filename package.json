@@ -2,7 +2,10 @@
   "name": "Mussarela",
   "version": "0.1.0",
   "description": "A set of useful SASS mixins",
-  "main": "index.js",
+  "main": "./cli/bin/mussarela",
+  "bin": {
+    "mussarela": "./cli/bin/mussarela"
+    },
   "keywords": [
     "sass",
     "mixins",

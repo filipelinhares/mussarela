@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var util = require('../util/utils');
+var dest = process.argv[2] || '.';
+
+// fs.mkdir(dest + '/mussarela', function() {
+//   console.log('Folder has been created!');
+// })
+
+util.directoryIsEmpty(dest, function (empty) {
+  if(empty)
+    console.log("is vazia")
+  else
+    console.log('is not vazia');
+})
