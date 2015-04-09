@@ -4,9 +4,9 @@
 
 [**Documentation**](https://github.com/filipelinhares/mussarela/wiki)
 
-## Why another?
+## Why?
 
-I was using bourbon and others for a time, but he has more than i need and didn't have what i need too, so i decide to build my own set of mixins.
+I used bourbon for a while but it has many features I don't need while lacking some that I do. So I decided to build my own set of mixins.
 
 ## Installation
 
