@@ -317,9 +317,6 @@ table {
 td, th {
   padding: 0; }
 
-/*
-   MNML by @mrmrs_
-*/
 /* ==========================================================================
    VARIABLES
    ========================================================================== */
@@ -342,11 +339,21 @@ td, th {
 html, body {
   height: 100%; }
 
+* {
+  padding: 0;
+  margin: 0; }
+
+img {
+  max-width: 100%; }
+
 /* ==========================================================================
    TYPE
    - Copy
    - Type Scale
    ========================================================================== */
+body {
+  font-family: 'Lato', sans-serif; }
+
 /* Copy ========================================================================== */
 .intro {
   font-size: 32px; }
@@ -383,6 +390,35 @@ small, .small {
 /* ==========================================================================
    Site styles
    ========================================================================== */
+body {
+  background: #F7C657; }
+
+.content {
+  height: 100%;
+  width: 100%;
+  display: table;
+  text-align: center;
+  table-layout: fixed; }
+
+.intro {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+  color: #F4AD21; }
+
+.intro__title {
+  margin: 0; }
+
+.menu {
+  list-style: none; }
+
+.menu__item {
+  display: inline-block; }
+  .menu__item a {
+    text-decoration: none;
+    color: inherit; }
+
 /* ==========================================================================
    Media Queries
 
@@ -392,7 +428,7 @@ small, .small {
    ========================================================================== */
 /* Medium and Up - Targets everything larger than mobile
    ========================================================================== */
-/* Medium - only targets 1st breakpoint. Styles 
+/* Medium - only targets 1st breakpoint. Styles
    ========================================================================== */
-/* Large - only targets 2nd breakpoint. 
+/* Large - only targets 2nd breakpoint.
    ========================================================================== */

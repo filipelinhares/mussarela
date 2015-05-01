@@ -1,6 +1,42 @@
 /* ==========================================================================
    Site styles
    ========================================================================== */
+body {
+   background: $yellow-light;
+}
+
+.content {
+   height: 100%;
+   width: 100%;
+   display: table;
+   text-align: center;
+   table-layout: fixed;
+}
+
+.intro {
+   display: table-cell;
+   vertical-align: middle;
+   height: 100%;
+   width: 100%;
+   color: $yellow-dark;
+}
+
+.intro__title {
+   margin: 0;
+}
+
+.menu {
+   list-style: none;
+}
+
+.menu__item {
+   display: inline-block;
+
+   a {
+      text-decoration: none;
+      color: inherit;
+   }
+}
 
 /* ==========================================================================
    Media Queries
@@ -18,14 +54,14 @@
 
 }
 
-/* Medium - only targets 1st breakpoint. Styles 
+/* Medium - only targets 1st breakpoint. Styles
    ========================================================================== */
 
 @include break(medium) {
 
 }
 
-/* Large - only targets 2nd breakpoint. 
+/* Large - only targets 2nd breakpoint.
    ========================================================================== */
 
 @include break(large) {
