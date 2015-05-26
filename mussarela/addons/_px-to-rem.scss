@@ -15,7 +15,7 @@
         $val: strip-units($value);
       }
 
-      $rem: append($rem, (#{$val / 10}rem));
+      $rem: append($rem, (#{$val / strip-units($base-font)}rem));
     }
   }
   @return $rem;
