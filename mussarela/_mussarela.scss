@@ -1,19 +1,17 @@
-// Mussarela 0.1.0
-// Copyright 2015 Filipe Linhares.
-// MIT License
+// == Mussarela 0.1.0
+// -- An useful and simple set of SASS mixins!
+// ## Copyright 2015 Filipe Linhares.
+// ## MIT License
 
-@import 'settings/breakpoints';
-@import 'settings/base-font';
-@import 'settings/interval-units';
+@import 'settings/variables';
+@import 'settings/media';
 
 @import 'functions/assign-inputs';
 @import 'functions/collapse-directionals';
 @import 'functions/contains';
-@import 'functions/get-query-branch';
 @import 'functions/is-length';
 @import 'functions/to-length';
 @import 'functions/not-contains';
-@import 'functions/parse-breakpoint';
 @import 'functions/strip-units';
 @import 'functions/to-number';
 @import 'functions/unpack';
@@ -23,11 +21,15 @@
 @import 'mixins/coverer';
 @import 'mixins/directional-property';
 @import 'mixins/h-center';
-@import 'mixins/media';
 @import 'mixins/position';
 @import 'mixins/triangle';
 @import 'mixins/truncate';
 @import 'mixins/v-center';
+
+@import 'media/str-replace-first';
+@import 'media/get-query-branches';
+@import 'media/parse-expression';
+@import 'media/media';
 
 @import 'addons/px-to-em';
 @import 'addons/px-to-rem';

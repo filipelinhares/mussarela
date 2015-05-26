@@ -1,8 +1,12 @@
 @charset 'UTF-8';
 
-@mixin media ($conditions...) {
+// == Include Media (include-media.com)
+// -- Simple, elegant and maintainable media queries in Sass
+// ## Author: Eduardo Bouças
+
+@mixin media($conditions...) {
   @for $i from 1 through length($conditions) {
-    $conditions: set-nth($conditions, $i, parse-breakpoint(nth($conditions, $i)));
+    $conditions: set-nth($conditions, $i, parse-expression(nth($conditions, $i)));
   }
 
   $branches: get-query-branches($conditions);
